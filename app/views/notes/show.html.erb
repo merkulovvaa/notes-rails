@@ -1,0 +1,6 @@
+<p>id: <%= @note.id %></p>
+<p>title: <%= @note.title %></p>
+<p>text: <%= @note.text %></p>
+<p>user_id: <%= @note.user_id %></p>
+
+<%= button_to "Remove user", note_path(@note), method: :delete %>
